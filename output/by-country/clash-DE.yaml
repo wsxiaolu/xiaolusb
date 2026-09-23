@@ -1,0 +1,289 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇪 德国 (Germany) 01 - xiaohe
+  type: vless
+  server: 202.166.187.132
+  port: 443
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: f.yoptybla.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f.yoptybla.ru
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  type: ss
+  server: zeneco.ir
+  port: 1468
+  cipher: aes-128-gcm
+  password: n-P7p3Vk7vKL_rSulfwESQ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-de.skyvora.app
+  network: ws
+  ws-opts:
+    path: /3cagtz3
+    headers:
+      Host: cdn-de.skyvora.app
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  type: ss
+  server: 130.61.180.252
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CJz7/MZF6sW6ylvOCfAE+EmAqYZKN1GnMlS4tGUS3J4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  type: ss
+  server: 130.61.232.101
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: f+Q/z5EHlXtbRPZBqT8ygy+RUkwnc6kMcd8UY8iyxU8=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  type: vless
+  server: 35.157.240.237
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - xiaohe
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 11 - xiaohe
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 12 - xiaohe
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 13 - xiaohe
+  type: ss
+  server: 130.61.235.137
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IJPKybdCWc1qvoGqy0e6tflGkAAKCXe9FaWcBTjgfDs=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - xiaohe
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 15 - xiaohe
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 17 - xiaohe
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - xiaohe
+  type: vless
+  server: 85.115.209.232
+  port: 8443
+  uuid: 8d2196c0-2ec7-4867-8d66-d5d19bf8fb23
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: de7.bbobr.win
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: de7.bbobr.win
+- name: 🇩🇪 德国 (Germany) 19 - xiaohe
+  type: vless
+  server: 34.185.172.52
+  port: 443
+  uuid: 3255d065-119c-4103-a422-ea9d301b0707
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 20 - xiaohe
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - xiaohe
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-de.skyvora.app
+  network: ws
+  ws-opts:
+    path: /3cagtz3
+    headers:
+      Host: cdn-de.skyvora.app
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 德国 (Germany) 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 02 - xiaohe
+  - 🇩🇪 德国 (Germany) 03 - xiaohe
+  - 🇩🇪 德国 (Germany) 04 - xiaohe
+  - 🇩🇪 德国 (Germany) 05 - xiaohe
+  - 🇩🇪 德国 (Germany) 06 - xiaohe
+  - 🇩🇪 德国 (Germany) 07 - xiaohe
+  - 🇩🇪 德国 (Germany) 08 - xiaohe
+  - 🇩🇪 德国 (Germany) 09 - xiaohe
+  - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 11 - xiaohe
+  - 🇩🇪 德国 (Germany) 12 - xiaohe
+  - 🇩🇪 德国 (Germany) 13 - xiaohe
+  - 🇩🇪 德国 (Germany) 14 - xiaohe
+  - 🇩🇪 德国 (Germany) 15 - xiaohe
+  - 🇩🇪 德国 (Germany) 16 - xiaohe
+  - 🇩🇪 德国 (Germany) 17 - xiaohe
+  - 🇩🇪 德国 (Germany) 18 - xiaohe
+  - 🇩🇪 德国 (Germany) 19 - xiaohe
+  - 🇩🇪 德国 (Germany) 20 - xiaohe
+  - 🇩🇪 德国 (Germany) 21 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 (Germany) 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 02 - xiaohe
+  - 🇩🇪 德国 (Germany) 03 - xiaohe
+  - 🇩🇪 德国 (Germany) 04 - xiaohe
+  - 🇩🇪 德国 (Germany) 05 - xiaohe
+  - 🇩🇪 德国 (Germany) 06 - xiaohe
+  - 🇩🇪 德国 (Germany) 07 - xiaohe
+  - 🇩🇪 德国 (Germany) 08 - xiaohe
+  - 🇩🇪 德国 (Germany) 09 - xiaohe
+  - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 11 - xiaohe
+  - 🇩🇪 德国 (Germany) 12 - xiaohe
+  - 🇩🇪 德国 (Germany) 13 - xiaohe
+  - 🇩🇪 德国 (Germany) 14 - xiaohe
+  - 🇩🇪 德国 (Germany) 15 - xiaohe
+  - 🇩🇪 德国 (Germany) 16 - xiaohe
+  - 🇩🇪 德国 (Germany) 17 - xiaohe
+  - 🇩🇪 德国 (Germany) 18 - xiaohe
+  - 🇩🇪 德国 (Germany) 19 - xiaohe
+  - 🇩🇪 德国 (Germany) 20 - xiaohe
+  - 🇩🇪 德国 (Germany) 21 - xiaohe
+rules:
+- MATCH,PROXIES
