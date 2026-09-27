@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - xiaohe
+- name: 🇻🇳 VN 01 - xiaohe
   type: vless
-  server: 172.67.166.189
+  server: 160.187.1.101
   port: 443
-  uuid: 3e43ffd1-3f7b-45b0-a955-c249010c7ebc
+  uuid: c92e12ca-ea66-4785-8675-652b35134117
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: Open-39.AVL-a47261.WorKErS.DeV
+  servername: thus-k.netnode.cc.cd
   network: ws
   ws-opts:
-    path: /vl/9Vd7GxzImsNPSKUT9uIK0uYIARIV?ed=2560
+    path: /t.me/daily_free_vpn
     headers:
-      Host: open-39.avl-a47261.workers.dev
+      Host: thus-k.netnode.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - xiaohe
+  - 🇻🇳 VN 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - xiaohe
+  - 🇻🇳 VN 01 - xiaohe
 rules:
 - MATCH,PROXIES
