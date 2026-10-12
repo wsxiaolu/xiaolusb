@@ -6,38 +6,24 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 188.114.96.3
-  port: 2087
-  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: Ez-98919A.MOtoRicb.Workers.DeV
+  servername: my.kempekl.online
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
-      Host: ez-98919a.motoricb.workers.dev
+      Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 104.21.64.250
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  server: ruot.ayucloudservices.nl
+  port: 22037
+  cipher: aes-256-gcm
+  password: c2fe9024-d253-401a-b868-97421f6eb9e0
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
