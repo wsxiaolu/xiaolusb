@@ -5,6 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇮🇪 IE 02 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--i10VPN?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇮🇪 IE 03 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?DailyConfigs---DailyConfigs---DailyConfigs?ed=2056
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇮🇪 IE 04 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGIfp=chrome
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇮🇪 IE 05 - xiaohe
   type: ss
   server: 4.210.68.244
   port: 443
@@ -17,11 +73,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
+  - 🇮🇪 IE 03 - xiaohe
+  - 🇮🇪 IE 04 - xiaohe
+  - 🇮🇪 IE 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - xiaohe
+  - 🇮🇪 IE 02 - xiaohe
+  - 🇮🇪 IE 03 - xiaohe
+  - 🇮🇪 IE 04 - xiaohe
+  - 🇮🇪 IE 05 - xiaohe
 rules:
 - MATCH,PROXIES
