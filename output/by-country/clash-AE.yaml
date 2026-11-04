@@ -84,18 +84,17 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   type: vless
-  server: 109.120.155.155
-  port: 444
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   type: vless
   server: 95.174.68.188
@@ -109,32 +108,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,8 +121,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -163,7 +134,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
 rules:
 - MATCH,PROXIES
