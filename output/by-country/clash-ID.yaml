@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - xiaohe
   type: vless
-  server: 188.114.98.0
+  server: kozel.cc.cd
   port: 443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: freeceshi6.frii.site
+  servername: kozel.cc.cd
   network: ws
   ws-opts:
-    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    path: /118.151.222.66=17317fp=chrome
     headers:
-      Host: freeceshi6.frii.site
+      Host: kozel.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
